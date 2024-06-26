@@ -13,7 +13,7 @@ const Navbar = () => {
         <AnimatedGradientText>
           <Link to="/"
             className={cn(
-              `inline animate-gradient text-xl font-semibold bg-white hover:bg-gradient-to-r from-[#2F855A] via-[white] to-[#2F855A] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
+              `inline animate-gradient text-xl font-bold bg-white hover:bg-gradient-to-r from-[#16A34A] via-[white] to-[#16A34A] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
             )}
           >
             Home
@@ -26,7 +26,7 @@ const Navbar = () => {
         <AnimatedGradientText>
           <Link to="/"
             className={cn(
-              `inline animate-gradient text-xl font-semibold bg-white hover:bg-gradient-to-r from-[#2F855A] via-[white] to-[#2F855A] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
+              `inline animate-gradient text-xl font-bold bg-white hover:bg-gradient-to-r from-[#16A34A] via-[white] to-[#16A34A] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
             )}
           >
             About Me
@@ -39,7 +39,7 @@ const Navbar = () => {
         <AnimatedGradientText>
           <Link to="/"
             className={cn(
-              `inline animate-gradient text-xl font-semibold bg-white hover:bg-gradient-to-r from-[#2F855A] via-[white] to-[#2F855A] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
+              `inline animate-gradient text-xl font-bold bg-white hover:bg-gradient-to-r from-[#16A34A] via-[white] to-[#16A34A] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
             )}
           >
             Skills
@@ -52,7 +52,7 @@ const Navbar = () => {
         <AnimatedGradientText>
           <Link to="/"
             className={cn(
-              `inline animate-gradient text-xl font-semibold bg-white hover:bg-gradient-to-r from-[#2F855A] via-[white] to-[#2F855A] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
+              `inline animate-gradient text-xl font-bold bg-white hover:bg-gradient-to-r from-[#16A34A] via-[white] to-[#16A34A] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
             )}
           >
             Portfolio
@@ -66,7 +66,7 @@ const Navbar = () => {
         <AnimatedGradientText>
           <Link to="/"
             className={cn(
-              `inline animate-gradient text-xl font-semibold bg-white hover:bg-gradient-to-r from-[#2F855A] via-[white] to-[#2F855A] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
+              `inline animate-gradient text-xl font-bold bg-white hover:bg-gradient-to-r from-[#16A34A] via-[white] to-[#16A34A] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
             )}
           >
             Contact Me
@@ -77,13 +77,13 @@ const Navbar = () => {
   </>
 
   return (
-    <nav className="px-12 bg-black w-full flex justify-between items-center py-8">
+    <nav className="fixed z-50 px-12 bg-[#1C2637] bg-opacity-90 w-full flex justify-between items-center py-8">
       <div>
         <div className="z-10 flex items-center justify-center">
           <AnimatedGradientText>
             <Link to="/"
               className={cn(
-                `inline animate-gradient bg-gradient-to-r from-[#2F855A] via-[white] to-[#2F855A] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
+                `inline animate-gradient bg-gradient-to-r from-[#16A34A] via-[white] to-[#16A34A] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
               )}
             >
               Swapnil Aanam
@@ -91,7 +91,7 @@ const Navbar = () => {
           </AnimatedGradientText>
         </div>
       </div>
-      <ul className="mr-2 flex justify-center items-center items-center gap-8 uppercase">
+      <ul className="flex justify-center items-center gap-8 uppercase">
         {navLinks}
       </ul>
     </nav>
