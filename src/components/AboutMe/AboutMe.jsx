@@ -16,15 +16,15 @@ const AboutMe = () => {
           text="About Me"
         />
       </h2>
-      <div className="pt-28 flex justify-center items-center text-white">
-        <div className="w-1/2 mr-44">
+      <div className="pt-28 flex justify-center items-start gap-44 text-white">
+        <div className="w-[45%]">
           <div className="bg-white p-16 relative h-[450px]">
             <img src={aboutImage} alt="MD. Ashraf-Ul-Aanam Swapnil" className="border border-black -rotate-3 w-full h-full object-cover object-top" />
             <BorderBeam size={250} duration={12} delay={9} />
           </div>
         </div>
-        <div className="w-1/2">
-          <p className="text-lg font-semibold text-justify leading-loose mt-2">
+        <div className="w-3/5">
+          <p className="text-lg font-semibold text-justify leading-loose mt-7">
             I am MD. Ashraf-Ul-Aanam Swapnil, a graduate in Computer Science And Engineering from Metropolitan University, Bangladesh. I am a Full Stack Developer, having a learning experience over a year. My expertise span over technologies like Next JS, React JS, MongoDB, and Express JS. I also do have a passion for problem solving and competitive programming. I started my programming journey using C++ back in my university days.
           </p>
           <div>

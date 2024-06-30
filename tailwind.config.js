@@ -8,6 +8,7 @@ export default {
     extend: {
       animation: {
         gradient: "gradient 8s linear infinite",
+        meteor: "meteor 900s linear infinite",
         "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
       },
       keyframes: {
@@ -32,6 +33,14 @@ export default {
             "offset-distance": "100%",
           },
         },
+        meteor: {
+          "0%": { transform: "rotate(290deg) translateX(50px)", opacity: 1 },
+          "70%": { opacity: 1 },
+          "100%": {
+            transform: "rotate(290deg) translateX(-1000px)",
+            opacity: 0,
+          },
+        }
       },
     },
   },

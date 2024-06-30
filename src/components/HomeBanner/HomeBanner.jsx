@@ -15,7 +15,7 @@ const HomeBanner = () => {
                     <div className="text-white flex items-center tracking-wider">
                         <h2 className="text-3xl font-bold mr-4">Hey, I am </h2>
                         <WordRotate
-                            className="text-3xl font-bold text-green-600 tracking-wider"
+                            className="text-3xl font-bold text-green-500 tracking-wider"
                             words={["MD. Ashraf-Ul-Aanam Swapnil", "A Full Stack Web Developer", "A React Developer", "A MERN Stack Developer"]}
                         />
                     </div>
