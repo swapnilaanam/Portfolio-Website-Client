@@ -23,7 +23,6 @@ export default function GradualSpacing({
 
     const aboutRef = useRef(null);
     const inView = useInView(aboutRef);
-    console.log(inView);
 
     return (
         <div ref={aboutRef} className="flex justify-center space-x-1">
