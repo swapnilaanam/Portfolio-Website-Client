@@ -54,7 +54,7 @@ const Navbar = () => {
 
     </li>
     <li>
-      <Link to="/">
+      <a href="/#contactme">
         <AnimatedGradientText
           className={cn(
             `inline animate-gradient text-xl font-bold bg-white hover:bg-gradient-to-r from-[#16A34A] via-[white] to-[#16A34A] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
@@ -62,7 +62,7 @@ const Navbar = () => {
         >
           Contact Me
         </AnimatedGradientText>
-      </Link>
+      </a>
     </li>
   </>
 
