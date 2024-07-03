@@ -1,0 +1,84 @@
+.search-bar {
+    width: 650px;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #303030;
+    border-bottom: 2px solid #9a9a9a;
+    padding-left: 20px;
+    padding-right: 10px;
+    background-color: #2d2d2d;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .search-bar::placeholder {
+    color: #9a9a9a;
+  }
+  
+  .search-bar:hover {
+    background-color: #313131;
+  }
+  
+  .search-bar:active,
+  .search-bar:focus {
+    background-color: #1e1f20;
+    border: 1px solid #2d2d2d;
+    border-bottom: 2px solid #16a34a;
+  }
+
+  .text-box {
+    padding-top: 10px;
+    height: 150px !important;
+  }
+
+  button {
+    --color: #16a34a;
+    font-family: inherit;
+    display: inline-block;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid white;
+    transition: color .5s;
+    z-index: 1;
+    font-size: 20px;
+    border-radius: 6px;
+    font-weight: 700;
+    color: black;
+    background-color: white;
+    padding: 4px 24px;
+    box-shadow: 0px 0px 10px white;
+   }
+   
+   button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   button:hover {
+    color: #fff;
+    border-color: var(--color);
+   }
+   
+   button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   button:active:before {
+    background: white;
+    transition: background 0s;
+   }

@@ -12,6 +12,7 @@ const Skills = () => {
 
     useEffect(() => {
         Aos.init({ easing: "linear" });
+        return () => Aos.refresh();
     })
 
     return (
@@ -74,6 +75,14 @@ const Skills = () => {
                 <div className="bg-white flex justify-center items-center gap-5 px-12 py-4 rounded-sm relative z-10" data-aos="flip-down">
                     <FaGitAlt className="text-5xl text-orange-600" />
                     <span className="text-3xl font-semibold">Git</span>
+                </div>
+                <div className="bg-white flex justify-center items-center gap-5 px-12 py-4 rounded-sm relative z-10" data-aos="flip-down">
+                    <FaHtml5 className="text-5xl text-orange-500" />
+                    <span className="text-3xl font-semibold">HTML</span>
+                </div>
+                <div className="bg-white flex justify-center items-center gap-5 px-12 py-4 rounded-sm relative z-10" data-aos="flip-down">
+                    <FaCss3Alt className="text-5xl text-blue-600" />
+                    <span className="text-3xl font-semibold">CSS</span>
                 </div>
                 <div className="bg-white flex justify-center items-center gap-5 px-12 py-4 rounded-sm relative z-10" data-aos="flip-down">
                     <SiStripe className="text-5xl text-green-500" />

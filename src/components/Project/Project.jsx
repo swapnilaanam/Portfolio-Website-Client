@@ -77,4 +77,4 @@ const Project = ({ imageNumber, name, desc, features, tech, liveLink, clientLink
     )
 }
 
-export default Project
+export default Project;

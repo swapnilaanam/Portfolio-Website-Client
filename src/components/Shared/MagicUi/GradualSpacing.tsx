@@ -27,20 +27,19 @@ export default function GradualSpacing({
     return (
         <div ref={aboutRef} className="flex justify-center space-x-1">
             <AnimatePresence>
-                {inView &&
-                    text.split("").map((char, i) => (
-                        <motion.h1
-                            key={i}
-                            initial="hidden"
-                            animate="visible"
-                            exit="hidden"
-                            variants={framerProps}
-                            transition={{ duration, delay: i * delayMultiple }}
-                            className={cn("drop-shadow-sm ", className)}
-                        >
-                            {char === " " ? <span>&nbsp;</span> : char}
-                        </motion.h1>
-                    ))}
+                {text.split("").map((char, i) => (
+                    <motion.h1
+                        key={i}
+                        initial="hidden"
+                        animate={inView ? "visible" : "hidden"}
+                        exit="hidden"
+                        variants={framerProps}
+                        transition={{ duration, delay: i * delayMultiple }}
+                        className={cn("drop-shadow-sm ", className)}
+                    >
+                        {char === " " ? <span>&nbsp;</span> : char}
+                    </motion.h1>
+                ))}
             </AnimatePresence>
         </div>
     );
