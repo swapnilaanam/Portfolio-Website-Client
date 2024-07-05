@@ -3,7 +3,7 @@ import './ContactMe.css';
 
 const ContactMe = () => {
   return (
-    <section className="px-16 pt-40 bg-black" id="contactme">
+    <section className="px-4 lg:px-16 pt-40 bg-black" id="contactme">
       <h2 className="text-center">
         <GradualSpacing
           className="text-center text-5xl font-bold tracking-[-0.1em] text-white"

@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 
 const Portfolio = () => {
     return (
-        <section className="px-16 pt-40 bg-black overflow-hidden" id="portfolio">
+        <section className="px-4 lg:px-16 pt-40 bg-black overflow-hidden" id="portfolio">
             <h2 className="text-center">
                 <GradualSpacing
                     className="text-center text-5xl font-bold tracking-[-0.01em] text-white"

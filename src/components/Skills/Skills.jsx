@@ -16,7 +16,7 @@ const Skills = () => {
     })
 
     return (
-        <section className="px-16 pt-40 bg-black overflow-hidden" id="skills">
+        <section className="px-4 lg:px-16 pt-40 bg-black overflow-hidden" id="skills">
             <h2 className="text-center">
                 <GradualSpacing
                     className="text-center text-5xl font-bold tracking-[-0.01em] text-white"

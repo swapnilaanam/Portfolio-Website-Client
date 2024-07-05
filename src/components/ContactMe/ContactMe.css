@@ -82,3 +82,9 @@
     background: white;
     transition: background 0s;
    }
+
+   @media only screen and (max-width: 376px) {
+    .search-bar {
+      width: 300px;
+    }
+   }

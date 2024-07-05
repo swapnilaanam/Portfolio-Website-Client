@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
-import { Link } from "react-router-dom"
-import ShineBorder from "../Shared/MagicUi/ShineBorder"
-import { BorderBeam } from "../Shared/MagicUi/BorderBeam"
-import { useEffect } from "react"
-import Aos from "aos"
+import { Link } from "react-router-dom";
+import ShineBorder from "../Shared/MagicUi/ShineBorder";
+import { BorderBeam } from "../Shared/MagicUi/BorderBeam";
+import { useEffect } from "react";
+import Aos from "aos";
 
 const Project = ({ imageNumber, name, desc, features, tech, liveLink, clientLink, serverLink }) => {
 
@@ -11,16 +11,16 @@ const Project = ({ imageNumber, name, desc, features, tech, liveLink, clientLink
         Aos.init();
     });
     return (
-        <div className="w-[900px] bg-gray-200 border border-white p-5 rounded-sm shadow-xl shadow-gray-300" data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="800">
-            <div className={`mx-auto w-[800px] h-[341px] border project project-${imageNumber} relative shadow-lg rounded-sm`}>
+        <div className="w-full lg:w-[900px] bg-gray-200 border border-white p-2 lg:p-5 rounded-sm shadow-xl shadow-gray-300" data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="800">
+            <div className={`mx-auto w-full lg:w-[800px] h-[341px] border project project-${imageNumber} relative shadow-lg rounded-sm`}>
                 <BorderBeam size={700} duration={20} delay={9} />
             </div>
             <div className="px-2 mt-12 text-black">
-                <div className="flex justify-between items-center">
+                <div className="flex flex-col lg:flex-row justify-between items-center gap-7 lg:gap-0">
                     <h2 className="text-3xl font-semibold">
                         {name}
                     </h2>
-                    <div className="mt-0.5 flex justify-center items-center gap-5">
+                    <div className="mt-0.5 flex flex-col lg:flex-row justify-center lg:items-center gap-5">
                         <Link to={liveLink} target="_blank">
                             <ShineBorder
                                 className="text-white text-center text-sm font-semibold capitalize bg-green-600 px-7 py-2"
@@ -47,10 +47,10 @@ const Project = ({ imageNumber, name, desc, features, tech, liveLink, clientLink
                         </Link>
                     </div>
                 </div>
-                <p className="px-1 mt-10 text-justify text-lg font-medium leading-6">
+                <p className="px-2 lg:px-1 mt-10 text-justify text-lg font-medium leading-6">
                     {desc}
                 </p>
-                <ul className="px-12 mt-7 text-justify text-lg font-medium list-disc space-y-4">
+                <ul className="px-10 lg:px-12 mt-7 text-justify text-lg font-medium list-disc space-y-4">
                     {
                         features?.map((feature, index) => {
                             return (
@@ -62,7 +62,7 @@ const Project = ({ imageNumber, name, desc, features, tech, liveLink, clientLink
                     }
                 </ul>
             </div>
-            <div className="mt-12 mb-3 flex flex-wrap justify-center items-center gap-3">
+            <div className="mt-12 mb-3 flex flex-wrap justify-center items-center gap-4 lg:gap-3">
                 {
                     tech?.map((name, index) => {
                         return (
