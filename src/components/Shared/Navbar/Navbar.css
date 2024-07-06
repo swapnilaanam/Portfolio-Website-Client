@@ -3,5 +3,11 @@
 }
 
 .menu-open {
-    transform: translate(-500px, 0px);
+    transform: translate(-600px, 0px);
+}
+
+@media only screen and (min-width: 768px) {
+    .menu-open {
+        transform: translate(-1100px, 0px);
+    }
 }

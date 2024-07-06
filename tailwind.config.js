@@ -42,6 +42,9 @@ export default {
           },
         }
       },
+      screens: {
+        desktop_sm: '1420px' 
+      }
     },
   },
   plugins: [],
