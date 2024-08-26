@@ -10,7 +10,7 @@ const Portfolio = () => {
         queryKey: ['projects'],
         queryFn: async () => {
             try {
-                const response = await axios.get('https://admin.swapnilaanam.xyz/api/projects-with-techs');
+                const response = await axios.get('https://portfolio-website-admin-n87o.onrender.com/api/projects-with-techs');
 
                 if (response?.status === 200) {
                     return response?.data

@@ -11,7 +11,7 @@ const Home = () => {
     queryKey: ['personalInfo'],
     queryFn: async () => {
       try {
-        const response = await axios.get('https://admin.swapnilaanam.xyz/api/personal-info');
+        const response = await axios.get('https://portfolio-website-admin-n87o.onrender.com/api/personal-info');
 
         if (response?.status === 200) {
           // console.log(response?.data[0]);
