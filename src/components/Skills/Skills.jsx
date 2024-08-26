@@ -7,6 +7,7 @@ import Meteors from '../Shared/MagicUi/Meteors';
 import { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { GrMysql } from 'react-icons/gr';
 
 const Skills = () => {
 
@@ -55,6 +56,10 @@ const Skills = () => {
                 <div className="bg-white flex justify-center items-center gap-5 px-12 py-4 rounded-sm relative z-10" data-aos="flip-down">
                     <SiMongoose className="text-5xl text-red-700" />
                     <span className="text-3xl font-semibold">Mongoose</span>
+                </div>
+                <div className="bg-white flex justify-center items-center gap-5 px-12 py-4 rounded-sm relative z-10" data-aos="flip-down">
+                    <GrMysql className="text-5xl text-sky-700" />
+                    <span className="text-3xl font-semibold">MySQl</span>
                 </div>
                 <div className="bg-white flex justify-center items-center gap-5 px-12 py-4 rounded-sm relative z-10" data-aos="flip-down">
                     <SiFirebase className="text-5xl text-yellow-500" />

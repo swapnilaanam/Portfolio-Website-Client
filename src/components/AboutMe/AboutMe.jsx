@@ -7,7 +7,8 @@ import aboutImage from '../../assets/images/about.jpg';
 import { BorderBeam } from "../Shared/MagicUi/BorderBeam";
 import { Link } from "react-router-dom";
 
-const AboutMe = () => {
+// eslint-disable-next-line react/prop-types
+const AboutMe = ({ phone, mail, linkedInLink, gitHubLink }) => {
   return (
     <section className="px-4 md:px-10 xl:px-16 pt-48 lg:pt-28 bg-black overflow-hidden" id="about">
       <h2 className="text-center">
@@ -20,7 +21,7 @@ const AboutMe = () => {
         <div className="w-full xl:w-[45%]">
           <div className="bg-white p-7 md:p-10 lg:p-16 relative h-[300px] md:h-[500px] lg:h-[650px] xl:h-[450px]">
             <img src={aboutImage} alt="MD. Ashraf-Ul-Aanam Swapnil" className="border border-black -rotate-3 w-full h-full object-cover object-top" />
-            <BorderBeam size={250} duration={12} delay={9} />
+            <BorderBeam className="hidden lg:block" size={250} duration={12} delay={9} />
           </div>
         </div>
         <div className="w-full xl:w-3/5">
@@ -29,26 +30,27 @@ const AboutMe = () => {
           </p>
           <div>
             <Dock>
-              <DockIcon>
-                <a href="tel:+8801685016531">
+              <a href={`tel:${phone}`}>
+                <DockIcon>
                   <FaPhoneFlip className="h-4 md:h-6 w-4 md:w-6" />
-                </a>
-              </DockIcon>
-              <DockIcon>
-                <a href="mailto:swapnilaanam211@gmail.com">
+                </DockIcon>
+              </a>
+              <a href={`mailto:${mail}`}>
+                <DockIcon>
+
                   <IoMdMail className="h-4 md:h-6 w-4 md:w-6" />
-                </a>
-              </DockIcon>
-              <DockIcon>
-                <Link to="https://www.linkedin.com/in/md-ashraf-ul-aanam-swapnil" target="_blank">
+                </DockIcon>
+              </a>
+              <Link to={linkedInLink} target="_blank">
+                <DockIcon>
                   <FaLinkedin className="h-4 md:h-6 w-4 md:w-6" />
-                </Link>
-              </DockIcon>
-              <DockIcon>
-                <Link to="https://github.com/swapnilaanam" target="_blank">
+                </DockIcon>
+              </Link>
+              <Link to={gitHubLink} target="_blank">
+                <DockIcon>
                   <FaGithub className="h-4 md:h-6 w-4 md:w-6" />
-                </Link>
-              </DockIcon>
+                </DockIcon>
+              </Link>
             </Dock>
           </div>
         </div>
@@ -57,4 +59,4 @@ const AboutMe = () => {
   )
 }
 
-export default AboutMe
+export default AboutMe;
