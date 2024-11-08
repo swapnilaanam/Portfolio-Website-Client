@@ -6,9 +6,12 @@ const ContactMe = () => {
     <section className="px-4 md:px-10 xl:px-16 pt-40 bg-black" id="contactme">
       <h2 className="text-center">
         <GradualSpacing
-          className="text-center text-5xl font-bold tracking-[-0.1em] text-white"
+          className="hidden lg:block text-center text-5xl font-bold tracking-[-0.1em] text-white"
           text="Contact Me"
         />
+        <span className="lg:hidden text-center text-5xl font-bold text-white">
+          Contact Me
+        </span>
       </h2>
       <div className="pt-28 flex justify-center items-center">
         <form action="https://formspree.io/f/xeojqkqo" method="post" className="space-y-7">

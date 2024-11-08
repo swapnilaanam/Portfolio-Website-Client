@@ -16,7 +16,7 @@ const Main = () => {
 
   if (loading) {
     return (
-      <div className="w-full h-screen bg-black flex justify-center items-center">
+      <div className="w-full min-h-screen bg-black flex justify-center items-center">
         <PropagateLoader color="#FFFFFF" loading={loading} />
       </div>
     )

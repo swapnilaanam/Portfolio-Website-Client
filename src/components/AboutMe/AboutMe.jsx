@@ -13,9 +13,12 @@ const AboutMe = ({ phone, mail, linkedInLink, gitHubLink }) => {
     <section className="px-4 md:px-10 xl:px-16 pt-48 lg:pt-28 bg-black overflow-hidden" id="about">
       <h2 className="text-center">
         <GradualSpacing
-          className="text-center text-5xl font-bold tracking-[-0.1em] text-white"
+          className="hidden lg:block text-center text-5xl font-bold tracking-[-0.1em] text-white"
           text="About Me"
         />
+        <span className="lg:hidden text-center text-5xl font-bold text-white">
+          About Me
+        </span>
       </h2>
       <div className="pt-28 flex flex-col xl:flex-row justify-center items-start gap-20 xl:gap-44 text-white">
         <div className="w-full xl:w-[45%]">

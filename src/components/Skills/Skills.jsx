@@ -20,9 +20,12 @@ const Skills = () => {
         <section className="px-4 md:px-10 xl:px-16 pt-40 bg-black overflow-hidden" id="skills">
             <h2 className="text-center">
                 <GradualSpacing
-                    className="text-center text-5xl font-bold tracking-[-0.01em] text-white"
+                    className="hidden lg:block text-center text-5xl font-bold tracking-[-0.01em] text-white"
                     text="Skills"
                 />
+                <span className="lg:hidden text-center text-5xl font-bold text-white">
+                    Skills
+                </span>
             </h2>
             <div className="pt-28 flex justify-center items-center gap-10 flex-wrap relative">
                 <div className="bg-white flex justify-center items-center gap-5 px-12 py-4 rounded-sm relative z-10" data-aos="flip-down">

@@ -19,45 +19,45 @@ const Project = ({ image, name, desc, feature1, feature2, feature3, techs, liveL
                     <h2 className="text-3xl font-semibold">
                         {name}
                     </h2>
-                    <div className="mt-0.5 flex flex-col md:flex-row justify-center items-center gap-1 lg:gap-5">
+                    <div className="mt-0.5 flex flex-col md:flex-row justify-center items-center gap-5">
                         <Link to={liveLink} target="_blank">
                             <ShineBorder
-                                className="hidden lg:block text-white text-center text-sm font-semibold capitalize bg-green-600 px-7 py-2"
+                                className="text-white text-center text-sm font-semibold capitalize bg-green-600 px-7 py-2"
                                 color={["white", "#22C55E"]}
                             >
                                 Live Website
                             </ShineBorder>
-                            <button
+                            {/* <button
                                 className="lg:hidden text-white text-center text-sm font-semibold capitalize bg-green-600 px-7 py-2"
                             >
                                 Live Website
-                            </button>
+                            </button> */}
                         </Link>
                         <Link to={clientLink} target="_blank">
                             <ShineBorder
-                                className="hidden lg:block text-black text-center text-sm font-semibold capitalize bg-yellow-400 px-7 py-2"
+                                className="text-black text-center text-sm font-semibold capitalize bg-yellow-400 px-7 py-2"
                                 color={["white", "#FCD34D"]}
                             >
                                 Client Side Code
                             </ShineBorder>
-                            <button
+                            {/* <button
                                 className="lg:hidden text-black text-center text-sm font-semibold capitalize bg-yellow-400 px-7 py-2"
                             >
                                 Client Side Code
-                            </button>
+                            </button> */}
                         </Link>
                         <Link to={serverLink} target="_blank">
                             <ShineBorder
-                                className="hidden lg:block text-white text-center text-sm font-semibold capitalize bg-red-600 px-7 py-2"
+                                className="text-white text-center text-sm font-semibold capitalize bg-red-600 px-7 py-2"
                                 color={["white", "#DC2626"]}
                             >
                                 Server Side Code
                             </ShineBorder>
-                            <button
+                            {/* <button
                                 className="lg:hidden text-white text-center text-sm font-semibold capitalize bg-red-600 px-7 py-2"
                             >
                                 Server Side Code
-                            </button>
+                            </button> */}
                         </Link>
                     </div>
                 </div>

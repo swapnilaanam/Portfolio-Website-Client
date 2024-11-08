@@ -29,33 +29,33 @@ const HomeBanner = ({ viewResumeLink }) => {
                     <p className="mt-7 mr-7 text-white md:text-xl xl:text-base text-center xl:text-justify font-medium leading-loose md:leading-loose xl:leading-loose tracking-wider">
                         I Create Modern Web Application Using MERN Stack. Crafting Beautiful, Scalable And Responsive Websites Using React For Me Is As Natural As Shooting Spider Web For Spider-Man Is! I Guess, Playing With Web Is Favorite For Both Us!
                     </p>
-                    <div className="mt-14 flex flex-col md:flex-row justify-center xl:justify-normal items-center gap-2 lg:gap-12">
+                    <div className="mt-14 flex flex-col md:flex-row justify-center xl:justify-normal items-center gap-12">
                         <Link target="_blank" to={viewResumeLink} className="cursor-pointer">
                             <ShineBorder
-                                className="hidden lg:block text-white text-center text-base md:text-xl xl:text-base font-bold capitalize bg-green-600 px-12 py-4"
+                                className="text-white text-center text-base md:text-xl xl:text-base font-bold capitalize bg-green-600 px-12 py-4"
                                 color={["white", "#22C55E"]}
                             >
                                 View Resume
                             </ShineBorder>
-                            <button
+                            {/* <button
                                 className="lg:hidden text-white text-center text-base md:text-xl xl:text-base font-bold capitalize bg-green-600 px-12 py-4"
                                 
                             >
                                 View Resume
-                            </button>
+                            </button> */}
                         </Link>
                         <a target="_blank" href={myResume} download className="cursor-pointer">
                             <ShineBorder
-                                className="hidden lg:block text-white text-center text-base md:text-xl xl:text-base font-bold capitalize bg-red-700 px-12 py-4"
+                                className="text-white text-center text-base md:text-xl xl:text-base font-bold capitalize bg-red-700 px-12 py-4"
                                 color={["white", "#DC2626"]}
                             >
                                 Download Resume
                             </ShineBorder>
-                            <button
+                            {/* <button
                                 className="lg:hidden text-white text-center text-base md:text-xl xl:text-base font-bold capitalize bg-red-700 px-12 py-4"
                             >
                                 Download Resume
-                            </button>
+                            </button> */}
                         </a>
                     </div>
                 </div>
