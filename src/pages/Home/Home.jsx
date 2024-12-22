@@ -6,13 +6,25 @@ import ContactMe from "../../components/ContactMe/ContactMe";
 // import { useQuery } from "react-query";
 // import axios from "axios";
 import { useEffect, useState } from "react";
-import personalInfoData from './../../assets/json/personalInfo.json';
 
 const Home = () => {
   const [personalInfo, setPersonalInfo] = useState({});
 
   useEffect(() => {
-    setPersonalInfo(personalInfoData);
+    const fetchData = async () => {
+      try {
+        const response = await fetch('/data/personalInfo.json');
+
+        if(response?.status === 200) {
+          const personalInfoData = await response.json();
+          setPersonalInfo(personalInfoData);
+        }
+      } catch(err) {
+        console.log(err);
+      }
+    };
+
+    fetchData();
   }, []);
 
   // const { data: personalInfo = [] } = useQuery({

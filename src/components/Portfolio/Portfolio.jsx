@@ -5,13 +5,25 @@ import 'aos/dist/aos.css';
 // import { useQuery } from "react-query";
 // import axios from "axios";
 import { useEffect, useState } from "react";
-import projectsData from "./../../assets/json/projectsData.json";
 
 const Portfolio = () => {
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
-        setProjects(projectsData);
+        const fetchData = async () => {
+            try {
+                const response = await fetch('/data/projectsData.json');
+
+                if(response?.status === 200) {
+                    const projects = await response.json();
+                    setProjects(projects);
+                }
+            } catch(err) {
+                console.log(err);
+            }
+        };
+
+        fetchData();
     }, []);
 
     // const { data: projects = [] } = useQuery({
