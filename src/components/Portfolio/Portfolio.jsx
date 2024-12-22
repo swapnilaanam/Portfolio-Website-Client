@@ -1,10 +1,9 @@
+import { useEffect, useState } from "react";
+
 import GradualSpacing from "../Shared/MagicUi/GradualSpacing"
 import Project from "../Project/Project";
 import "./Portfolio.css";
 import 'aos/dist/aos.css';
-// import { useQuery } from "react-query";
-// import axios from "axios";
-import { useEffect, useState } from "react";
 
 const Portfolio = () => {
     const [projects, setProjects] = useState([]);
@@ -25,8 +24,6 @@ const Portfolio = () => {
 
         fetchData();
     }, []);
-
-    // const { data: projects = [] } = useQuery({
     //     queryKey: ['projects'],
     //     queryFn: async () => {
     //         try {
